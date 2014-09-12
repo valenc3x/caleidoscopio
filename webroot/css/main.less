@@ -1,0 +1,276 @@
+/* Colors */
+@teal:    #3B8686;
+@purple:  #49074A;
+@lila:    #853E78;
+@black:   #393939;
+@gray:    #F1F1F1;
+
+@font-face {
+  font-family: 'Neou';
+  src: url('../font/Neou-Thin.otf');
+}
+@font-face {
+  font-family: 'NeouBold';
+  src: url('../font/Neou-Bold.otf');
+}
+
+.navbar-right{
+  position: relative!important;
+
+  &[small]{
+    margin: 0;
+  }
+}
+
+
+
+/* Responsiveness */
+@media(max-width:1243px){
+  .navbar-nav{
+    margin-left: 290px;
+    margin-top: -20px !important;
+    &[small]{
+      font-size: 0.9em !important;
+      margin-top: 8px !important;
+    }
+  }
+}
+@media(max-width:850px){
+  .navbar-nav{
+    font-size: 1.2em !important;
+    margin-left: 290px;
+  }
+}
+
+@media(max-width:768px){
+  .navbar-default {
+    height: 60px!important;
+  }
+  .navbar-brand img{
+    height: 40px;
+  }
+  .in ul{
+    margin-left: 0px;
+    margin-top: 10px !important;
+  }
+}
+#responsive-menu {
+  background: white;
+}
+
+/* Bootstrap overrides */
+.well{ border-radius: 0; }
+.navbar-default   { height: 140px; }
+.navbar-header    { height: 60px; }
+ul.navbar-nav     { margin-top: 40px; font-size: 1.6em;}
+.btn-default{
+  background-color: @purple;
+  color:white;
+}
+
+/* General styles */
+body {
+  font-family: "Roboto";
+  padding-top: 140px;
+  font-weight: 300;
+  color: @black;
+}
+
+
+section{
+  width: 100%;
+  margin-bottom: 30px;
+  .container.bind {
+    position: relative;
+  }
+}
+.text{
+  padding: 15px;
+  text-align: justify;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+}
+
+.help-block {
+  &::before{
+    content: '* ';
+  }
+  margin-left: 16px;
+  color: #787878;
+}
+
+header{ font-family: "NeouBold" }
+h1,h2,h3 { font-family: "Neou"; }
+h1{ font-size: 2.5em; }
+h2{ font-size: 1.5em; }
+h3{ font-size: 1em; }
+
+h4{ font-size: 1.5em; }
+.content{ width: 100%; padding-bottom: 50px;}
+.shadow{ text-shadow: 1px 1px 2px black; }
+.shadow-box{ box-shadow: 0px 1px 3px @black; }
+.well h1,
+.well h2{ text-align: center; }
+.left { float: left;}
+.right{ float: right;}
+
+a{
+  text-decoration: none!important;
+  cursor: pointer;
+  font-weight:bolder;
+  &:link{
+    color: white;
+  }
+  &:visited{
+    color:@gray;
+  }
+  &:hover{
+    color: @teal;
+  }
+  &:active{
+    color:@lila;
+  }
+}
+
+
+/* Site Styles */
+
+section {
+  > h1{
+    font-family: "Neou";
+    margin-left: 50px;
+  }
+  .text{
+    margin-top: 30px;
+  }
+  &.main{
+    height: 70vh;
+  }
+}
+
+.banner#main {
+  height: 100%;
+  background: url("../img/banner.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.floating-text {
+  max-width: 60vw;
+  margin: 30px 15px;
+  padding: 20px;
+  float: left;
+  font-size: 2vh;
+  background: rgba(255,255,255,0.7);
+  overflow: hidden;
+  max-height: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background: #393939;
+  color: #FFFFFF;
+  padding: 5px 0;
+  line-height: 40px;
+  font-size: 1.2em;
+}
+
+.heads{
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+
+  li {
+    list-style: none;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+  }
+}
+
+.heads-wrapper {
+  margin-right: 5%;
+}
+
+.speaker-name{
+  margin-top: 150px;
+  font-weight: bold;
+}
+
+.more {
+  .right;
+  padding: 5px;
+  background: @purple;
+  color: white;
+  margin-right: 20px;
+}
+
+.sponsors{
+
+  background:white;
+  padding-top: 50px;
+
+  &> div{
+    height: 100%!important;
+  }
+  img{
+    margin: 0 20px;
+    max-height: 130px;
+  }
+}
+
+// speakers
+
+a[class*=pull]{
+  padding: 0 20px 0 15px;
+}
+
+.workshops{
+  margin-top: 30px;
+
+  .container{
+    padding: 30px;
+  }
+}
+
+.person-name{
+  padding: 15px 0;
+}
+
+.description, .bio{
+  .text;
+  text-align: justify;
+  line-height: 1.5em;
+  padding: 30px;
+}
+
+.chosen-choices {
+  padding:6px!important;
+  li.search-field input[type=text]{
+    height: 16px!important;
+  }
+}
+
+.event{
+  margin-top: 60px;
+}
+
+.schedule{
+  img{
+    width: 100%;
+  padding: 0 6%;
+  }
+}
+
+
+.media-object{
+  max-width: 90vw;
+}
