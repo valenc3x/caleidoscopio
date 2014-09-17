@@ -47,7 +47,7 @@
       </ul>
     </div>
   </div>
-  <a href="/programa/ponencias" class="more"> Conoce al resto de ponentes <i class="fa fa-chevron-right"></i> </a>
+  <a href="/programa/ponencias" class="more"> Conoce al resto de los conferencistas <i class="fa fa-chevron-right"></i> </a>
 </section>
 <!-- Workshops -->
 <section class="workshop">
