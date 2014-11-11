@@ -11,5 +11,16 @@
   <!-- JS -->
   <script src="/webroot/js/main.js"></script>
 
+  <script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+  <script src="//cdn.datatables.net/responsive/1.0.2/js/dataTables.responsive.min.js"></script><link rel="stylesheet" href="//cdn.datatables.net/responsive/1.0.2/css/dataTables.responsive.css">
+
+<script>
+$(document).ready(function() {
+    $('.datatable').dataTable( {
+        "order": [[ 0, "desc"  ]]
+    });
+} );
+</script>
 </body>
 </html>

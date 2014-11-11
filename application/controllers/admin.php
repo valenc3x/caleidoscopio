@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Registro extends CI_Controller {
+class Admin extends CI_Controller {
 
     private function RenderView($view='landing',$data=array())
     {
@@ -12,27 +12,56 @@ class Registro extends CI_Controller {
     // TODO: check session state
     private function check_session()
     {
-        return true;
+        return $this->session->userdata('logged_in');
     }
 
     public function index()
     {
-        $this->RenderView('admin/login');
+        redirect('admin/login');
+    }
+
+    public function login()
+    {
+        if( $this->input->post() )
+        {
+            $this->load->model('user');
+            $user = $this->input->post('username');
+            $pass = $this->input->post('password');
+            $auth = $this->user->login($user, $pass);
+            if($auth)
+            {
+                $sess_array = array(
+                    'id' => $auth->id,
+                     'username' => $auth->username
+                );
+                $this->session->set_userdata('logged_in', $sess_array);
+                redirect('admin/registros');
+            }else{
+                $this->RenderView('login');
+            }
+        } else {
+            $this->RenderView('login');
+
+        }
     }
 
     // TODO: logout
     public function logout()
     {
-        $this->RenderView('');
+        $this->session->unset_userdata('logged_in');
+        session_destroy();
+        redirect('/');
     }
 
     public function registros()
     {
-        if( $this->check_session() ) {
-            $this->load->model('speaker_list');
-            $data['registries'] = $this->speaker_list->all_registries();
-            $this->RenderView('all_registries',$data);
-        }
+       if( $this->check_session() ) {
+           $this->load->model('speakers_list');
+           $data['registries'] = $this->speakers_list->all_registries();
+           $this->RenderView('all_registries',$data);
+       }else{
+           redirect('admin/login');
+       }
 
     }
 
