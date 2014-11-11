@@ -46,25 +46,20 @@ class Registro extends CI_Controller {
             $this->RenderView('speaker_registry',$data);
         }
     }
-
-    public function mesas_de_trabajo()
-    {
+    /*
+    public function mesas_de_trabajo() {
         if ($this->input->post()) {
             $this->load->library('upload');
             $this->load->library('form_validation');
             $this->load->model('attendants');
             $this->load->model('workshop_registry');
-
             $data = $this->input->post();
-            //$this->form_validation->set_rules('speakers[]', 'Ponencias', '');
-
             if ( $this->form_validation->run('workshops') === TRUE ) {
                     $registry_data['workshops'] = $data['workshops'];
                     unset($data['workshops']);
                     $registry_data['attendant'] = $this->attendants->new_attendant($data);
                     $this->workshop_registry->register($registry_data);
                     redirect('/registro/gracias');
-                /*
                 if (!$this->upload->do_upload('document')) {
                     $data['file_errors'] =  $this->upload->display_errors();
                     $this->RenderView('workshop_registry',$data);
@@ -73,7 +68,6 @@ class Registro extends CI_Controller {
                     $filename = $upload_data['file_name'];
                     $data['filename'] = $filename;
                 }
-                */
             } else {
                 $this->load->model('workshops');
                 $data['workshops'] = $this->workshops->all_workshops();
@@ -85,7 +79,7 @@ class Registro extends CI_Controller {
             $data['workshops'] = $this->workshops->all_workshops();
             $this->RenderView('workshop_registry',$data);
         }
-    }
+    }*/
 }
 
 /* End of file welcome.php */

@@ -44,14 +44,12 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="/programa">Actividades</a></li>
                 <li><a href="/programa/ponencias">Conferencistas</a></li>
-                <li><a href="/programa/mesas_de_trabajo">Mesas de Trabajo</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown">Registro<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="/registro/ponencias">Conferencias</a></li>
-                <li><a href="/registro/mesas_de_trabajo">Mesas de Trabajo</a></li>
               </ul>
             </li>
             <li><a href="/contacto">Contacto</a></li>
@@ -59,7 +57,6 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://www.facebook.com/pages/Congreso-Caleidoscopio/451044631703825"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://twitter.com/CongresoCaleido"> <i class="fa fa-twitter"></i> </a></li>
-            <li><a href="http://instagram.com/congresocaleido"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

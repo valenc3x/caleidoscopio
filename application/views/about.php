@@ -1,7 +1,7 @@
 <div class="content">
     <div class="container">
         <div class="event">
-            <h4>Congreso Caleidoscopio: Una nueva proyección en las Relaciones Internacionales</h4>
+            <h4>Congreso Caleidoscopio: Una nueva proyección de las Relaciones Internacionales</h4>
             <div class="text">
                 Caleidoscopio tiene como objetivo presentar la versatilidad de la disciplina de las
                 Relaciones Internacionales mediante diferentes acercamientos y enfoques, descubriendo el

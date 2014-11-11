@@ -16,7 +16,7 @@
             desarrollo como profesionistas y humanistas; por ello se ha organizado el Primer Congreso
             Interuniversitario de Relaciones Internacionales del Tecnológico de Monterrey Campus
             Querétaro <strong> Caleidoscopio: una nueva proyección de las Relaciones Internacionales </strong>, a
-            realizarse del <strong> 19 al 22 de noviembre del 2014 </strong>, tomando como sedes el Salón de Congresos
+            realizarse del <strong> 19 al 21 de noviembre del 2014 </strong>, tomando como sedes el Salón de Congresos
             de la institución, y el Cineteatro Rosalío Solano, ubicado en el centro de ciudad.
         </p>
       </div>
@@ -26,20 +26,18 @@
 <!-- Talks -->
 <section class="talks">
   <div class="container bind">
-    <h1>Ponencias</h1>
+    <h1>Conferencias</h1>
     <div class="text col-sm-6">
         En el 1er Congreso Caleidoscopio se ofrecerán diez conferencias abarcando distintos temas
         relacionados con el estudio y la carrera de las Relaciones Internacionales y sobre todo como
         opciones a contemplar para el desarrollo profesional de los internacionalistas. <br>
-        Contaremos con la presencia de excelentes conferencistas como: la Dra. Nuria Sanz,
-        directora de la UNESCO en México, el Embajador Francisco González de Cossío, primer
-        embajador mexicano en Arabia Saudita y el Excmo. Dr. Hicham Hamdan. Embajador de
-        Líbano en México.
+        Contaremos con la presencia de excelentes conferencistas como: el Embajador Francisco González de Cossío, primer
+        embajador mexicano en Arabia Saudita y la antropóloga social Alejandra Gómez Colorado, curadora de las colecciones de Oriente Medio en el Museo Nacional de las Culturas.
     </div>
     <div class="heads-wrapper col-sm-5">
       <ul class="heads col-sm-3">
-        <li style="background-image: url('/webroot/img/fotos/nuria_saenz.jpg');"> </li>
-            <span class="speaker-name"> Dra. Nuria Sanz </span>
+        <li style="background-image: url('/webroot/img/fotos/alejandra_gomez.jpg');"> </li>
+            <span class="speaker-name"> Alejandra Gómez Colorado </span>
       </ul>
       <ul class="heads col-sm-3">
         <li style="background-image: url('/webroot/img/fotos/francisco_cossio.jpg');"></li>
@@ -48,36 +46,6 @@
     </div>
   </div>
   <a href="/programa/ponencias" class="more"> Conoce al resto de los conferencistas <i class="fa fa-chevron-right"></i> </a>
-</section>
-<!-- Workshops -->
-<section class="workshop">
-  <div class="container bind">
-    <h1>Mesas de Trabajo</h1>
-    <div class="text col-sm-6">
-        Dentro del Congreso pretendemos estructurar mesas de diálogo inter-universitarias que
-        lleven a una reflexión acerca de diferentes temas de actualidad y que propongan ideas
-        innovadoras y trascendentes. <br>
-        Las mesas tendrán una estructura de diálogo y debate con
-        profesores asesores en la materia, donde los estudiantes sean capaces de estructurar y
-        sustentar sus argumentos así como llegar en conjunto a una conclusión de acuerdo a su
-        tema.
-    </div>
-    <div class="wrapper col-sm-5">
-      <div class="text">
-          Temáticas:
-          <ul>
-              <li>Diplomacia</li>
-              <li>Identidad y cultura</li>
-              <li>Sustentabilidad</li>
-              <li>Conflictos en medio oriente</li>
-              <li>Empresa Privada</li>
-              <li>Organizaciones internacionales y su papel en la arena internacional</li>
-              <li>Género en los medios de comunicación</li>
-          </ul>
-      </div>
-    </div>
-  </div>
-  <a href="/programa/mesas_de_trabajo" class="more"> Conoce las mesas de trabajo <i class="fa fa-chevron-right"></i> </a>
 </section>
 <!-- Map -->
 <section class="map">

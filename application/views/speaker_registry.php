@@ -32,11 +32,11 @@
                     <input name="university" value="<?= set_value('university');?>" class="form-control" type="text">
                 </div>
                 <div class="form-group">
-                    <label for="">Ponencias</label>
+                    <label for="">Conferencias</label>
                     <p> <?= form_error('speakers[]') ?> </p>
-                    <select name="speakers[]" class="form-control chosen-select" data-placeholder="Selecciona las ponencias" multiple>
+                    <select name="speakers[]" class="form-control chosen-select" data-placeholder="Selecciona las conferencias" multiple>
                         <?php foreach($speakers as $person): ?>
-                            <option value="<?= $person->id ?>"> <?= $person->name ?> </option>
+                            <option value="<?= $person->id ?>"> <?= $person->name." - ".$person->title ?> </option>
                         <?php endforeach; ?>
                     </select>
                     <p class="help-block">Selecciona una o mas ponencias.</p>
